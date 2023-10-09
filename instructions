@@ -10,6 +10,4 @@ william ALL= (root) NOPASSWD: /usr/sbin/argpar
 william ALL= (root) NOPASSWD: /usr/sbin/shutdown
 
 This works by setting the data pins on the parallel port to high. My phyisical wiring only uses 3 data pins to control the relay but I turn on all pins because nothing else is connected. The solenoid water valve has its own 12 volt power supply that is connected to a power oulet and the power outlet is controlled by a relay. The script runs at start up and sets the data pins to low then logs the time. After that it sets the pins to high and sleeps for 30 seconds. After the 30 seconds it sets the pins to low again and sets the machine to reboot in 1440 seconds witch is 24 hours. In the bios of the computer it is set to turn on after a power failure, so if the power goes out the watering will still resume after the power is restored. There are much better ways to handle the timing but this is only a temporary set up and the machine is not being used for anything else.
-Videos:
-https://rumble.com/v2zidnu-temporary-watering-with-computer-control.html
-https://rumble.com/v2zj2y8-temp-watering-2.html
+
